@@ -18,7 +18,7 @@ const mergeTwoLists = function(list1, list2) {
     // Create dummy node to handle edge cases
     let dummy = new ListNode(-1);
     let current = dummy;
-    
+
     // While both lists have nodes
     while (list1 !== null && list2 !== null) {
         if (list1.val <= list2.val) {
