@@ -1,1 +1,1 @@
-These are a series of leetcode problems from the Javascript 30 problem set.
+Going through Leetcode problems in both JS and GO.
