@@ -1,0 +1,26 @@
+package main
+
+type ListNode struct {
+	Val  int
+	Next *ListNode
+}
+
+func deleteDuplicates(head *ListNode) *ListNode {
+	if head == nil || head.Next == nil {
+		return head
+	}
+	current := head
+	for current != nil && current.Next != nil {
+		if current.Val == current.Next.Val {
+			current.Next = current.Next.Next
+		} else {
+			current = current.Next
+		}
+	}
+	return head
+}
+
+func main() {
+	input = [1,1,2]
+	fmt.Println(deleteDuplicates(input))
+}
